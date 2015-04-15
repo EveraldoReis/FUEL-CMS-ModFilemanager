@@ -19,8 +19,7 @@
 
   Contact: Lyubomir Arsov, liubo (at) web-lobby.com
 */
-
-$.ajaxSetup ({cache: false});
+$.ajaxSetup ({cache: false, data: {csrf_test_name: $.cookie('csrf_cookie_name')}});
 function selectFile(item){
   $('#pnlFileList li').removeClass('selected');
   $(item).prop('class', 'selected');
