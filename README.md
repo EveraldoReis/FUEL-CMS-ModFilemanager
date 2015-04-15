@@ -1,6 +1,8 @@
-# FUEL-CMS-ModRoxyFilemanager
+# FUEL-CMS-ModFilemanager
 
-Module to integrate Roxy File Manager - <a href="http://www.roxyfileman.com/">http://www.roxyfileman.com</a> in Fuel CMS admin.
+Module to integrate File Managers in Fuel CMS admin.
+
+Actually support only Roxy File Manager - <a href="http://www.roxyfileman.com/">http://www.roxyfileman.com</a>
 
 <h3>Features</h3>
 - Generate filemanager area displayed as menu item
