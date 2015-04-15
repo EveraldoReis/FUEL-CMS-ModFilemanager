@@ -33,7 +33,6 @@ function FileSelected(file){
    * height - if the file is image, this will be the height of the original image, 0 otherwise
    * 
    */
-  window.parent.console.log(RoxyUtils.GetUrlParam('img'));
   var s = (file.ext == 'png' || file.ext == 'gif' || file.ext == 'jpg' || file.ext == 'jpeg' || file.ext == 'svg');
   file.fullPath = s ? file.fullPath : jqx_config.basePath + 'fuel/modules/fileman/views/assets/images/filetypes/big/file_extension_' + file.ext + '.png';
   // Set the value of field sent to Fileman via URL param "field".
@@ -43,7 +42,7 @@ function FileSelected(file){
   // Close file manager if it's opened in separate window. 
   self.close();
   // Close file manager if it's opened in JQuery dialog.
-  window.parent.closeCustomRoxy();
+  window.parent.closeCustomRoxy(RoxyUtils.GetUrlParam('id'));
 }
 function GetSelectedValue(){
   /**
