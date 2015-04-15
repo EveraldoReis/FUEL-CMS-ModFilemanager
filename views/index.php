@@ -1,6 +1,7 @@
 <link href="<?php echo site_url('fuel/modules/fileman/views/assets/css/jquery-ui-1.10.4.custom.min.css');?>" rel="stylesheet" type="text/css" />
 <link href="<?php echo site_url('fuel/modules/fileman/views/assets/css/main.min.css');?>" rel="stylesheet" type="text/css" />
 <script type="text/javascript" src="<?php echo site_url('fuel/modules/fileman/views/assets/js/jquery-ui-1.10.4.custom.min.js');?>"></script>
+<script type="text/javascript" src="<?php echo site_url('fuel/modules/fileman/views/assets/js/jquery.cookie.js');?>"></script>
 <script type="text/javascript" src="<?php echo site_url('fuel/modules/fileman/views/assets/js/custom.js');?>"></script>
 <script type="text/javascript" src="<?php echo site_url('fuel/modules/fileman/views/assets/js/main.min.js');?>"></script>
 <script type="text/javascript" src="<?php echo site_url('fuel/modules/fileman/views/assets/js/jquery-dateFormat.min.js');?>"></script>
