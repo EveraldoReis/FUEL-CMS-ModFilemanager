@@ -498,7 +498,7 @@ class RoxyImage {
 $tmp = json_decode(file_get_contents(BASE_PATH . '/assets/conf.json'), true);
 if ($tmp) {
 	foreach ($tmp as $k => $v) {
-		define($k, $v);
+		defined($k) || define($k, $v);
 	}
 
 } else {
