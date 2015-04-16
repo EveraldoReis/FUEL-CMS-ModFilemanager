@@ -17,7 +17,6 @@ git clone git@bitbucket.org:everaldoreis/fuel-cms-modfileman.git fileman
 Open fuel/application/config/custom_fields.php and add code below:
 
 ```
-#!php
 
 $fields['fileman'] = array(<br/>
 'class' => array(FILEMAN_FOLDER => 'Fileman_custom_fields'),<br/>
