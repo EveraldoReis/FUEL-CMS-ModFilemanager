@@ -10,7 +10,7 @@ Actually support only Roxy File Manager - <a href="http://www.roxyfileman.com/">
 
 ##Installation
 
-First clone repository to fuel/modules/fileman folder: 
+First go to fuel/modules and run: 
 
 git clone https://github.com/EveraldoReis/FUEL-CMS-ModFilemanager.git fileman
 
