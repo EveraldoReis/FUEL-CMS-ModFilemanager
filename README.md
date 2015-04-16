@@ -19,16 +19,16 @@ Open fuel/application/config/custom_fields.php and add code below:
 ```
 #!php
 
-$fields['fileman'] = array(<br/>
-'class' => array(FILEMAN_FOLDER => 'Fileman_custom_fields'),<br/>
-'function' => 'fileman',<br/>
-'filepath' => '',<br/>
-'js' => array(<br/>
-FUEL_FOLDER => array(),<br/>
-),<br/>
-'js_function' => '',<br/>
-'represents' => array('image'),<br/>
-);<br/>
+$fields['fileman'] = array(
+  'class' => array(FILEMAN_FOLDER => 'Fileman_custom_fields'),
+  'function' => 'fileman',
+  'filepath' => '',
+  'js' => array(
+    FUEL_FOLDER => array(),
+  ),
+  'js_function' => '',
+  'represents' => array('image'),
+);
 
 ```
 
