@@ -12,7 +12,7 @@ Actually support only Roxy File Manager - <a href="http://www.roxyfileman.com/">
 
 First clone repository to fuel/modules/fileman folder: 
 
-git clone git@bitbucket.org:everaldoreis/fuel-cms-modfileman.git fileman
+git clone git@bitbucket.org:everaldoreis/fuel-cms-modfilemanager.git fileman
 
 Open fuel/application/config/custom_fields.php and add code below:
 
