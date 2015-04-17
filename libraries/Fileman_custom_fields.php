@@ -26,7 +26,7 @@ class Fileman_custom_fields {
   <div>
       <input id="field' . $id . '" type="hidden" value="' . $params['value'] . '" name="' . $params['key'] . '" />';
 		$output .= '<a href="javascript:openCustomRoxy(\'' . $id . '\')">';
-		$output .= '<img  id="img' . $id . '" style="max-width:' . $params['preview_width'] . ';" src="' . (in_array($ext, array('png', 'gif', 'jpg', 'jpeg', 'svg')) ? $params['value'] : site_url('fuel/modules/fileman/views/assets/images/filetypes/big/' . ($ext ? 'file_extension_' . $ext : 'unknown') . '.png')) . '" />';
+		$output .= '<img  id="img' . $id . '" style="max-width:' . $params['preview_width'] . ';" src="' . (in_array($ext, array('png', 'gif', 'jpg', 'jpeg', 'svg')) ? $params['value'] : site_url('fuel/modules/fileman/assets/images/filetypes/big/' . ($ext ? 'file_extension_' . $ext : 'unknown') . '.png')) . '" />';
 		$output .= '</a>';
 		$output .= '
       <div id="roxyCustomPanelfield' . $id . '" style="display: none;">
