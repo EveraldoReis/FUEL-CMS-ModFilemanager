@@ -1,10 +1,10 @@
-<link href="<?php echo site_url('fuel/modules/fileman/assets/css/jquery-ui-1.10.4.custom.min.css');?>" rel="stylesheet" type="text/css" />
-<link href="<?php echo site_url('fuel/modules/fileman/assets/css/main.min.css');?>" rel="stylesheet" type="text/css" />
-<script type="text/javascript" src="<?php echo site_url('fuel/modules/fileman/assets/js/jquery-ui-1.10.4.custom.min.js');?>"></script>
-<script type="text/javascript" src="<?php echo site_url('fuel/modules/fileman/assets/js/jquery.cookie.js');?>"></script>
-<script type="text/javascript" src="<?php echo site_url('fuel/modules/fileman/assets/js/custom.js');?>"></script>
-<script type="text/javascript" src="<?php echo site_url('fuel/modules/fileman/assets/js/main.min.js');?>"></script>
-<script type="text/javascript" src="<?php echo site_url('fuel/modules/fileman/assets/js/jquery-dateFormat.min.js');?>"></script>
+<link href="<?php echo base_url('fuel/modules/fileman/assets/css/jquery-ui-1.10.4.custom.min.css', false);?>" rel="stylesheet" type="text/css" />
+<link href="<?php echo base_url('fuel/modules/fileman/assets/css/main.min.css', false);?>" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="<?php echo base_url('fuel/modules/fileman/assets/js/jquery-ui-1.10.4.custom.min.js');?>"></script>
+<script type="text/javascript" src="<?php echo base_url('fuel/modules/fileman/assets/js/jquery.cookie.js');?>"></script>
+<script type="text/javascript" src="<?php echo base_url('fuel/modules/fileman/assets/js/custom.js', false);?>"></script>
+<script type="text/javascript" src="<?php echo base_url('fuel/modules/fileman/assets/js/main.min.js');?>"></script>
+<script type="text/javascript" src="<?php echo base_url('fuel/modules/fileman/assets/js/jquery-dateFormat.min.js');?>"></script>
 <body>
 <table cellpadding="0" cellspacing="0" id="wraper">
   <tr>
@@ -16,7 +16,7 @@
     </div>
     <div id="pnlLoadingDirs">
        <span>Carregando diretórios...</span><br>
-       <img src="<?php echo site_url('fuel/modules/fileman/assets/images/loading.gif');?>" title="Loading directory tree, please wait...">
+       <img src="<?php echo base_url('fuel/modules/fileman/assets/images/loading.gif');?>" title="Loading directory tree, please wait...">
     </div>
     <div class="scrollPane">
       <ul id="pnlDirList"></ul>
@@ -50,7 +50,7 @@
        <div class="scrollPane">
          <div id="pnlLoading">
           <span data-lang="LoadingFiles">Carregando arquivos...</span><br>
-          <img src="<?php echo site_url('fuel/modules/fileman/assets/images/loading.gif');?>" title="Loading files, please wait...">
+          <img src="<?php echo base_url('fuel/modules/fileman/assets/images/loading.gif');?>" title="Loading files, please wait...">
           </div>
           <div id="pnlEmptyDir" data-lang="DirIsEmpty">
           Diretório vazio
