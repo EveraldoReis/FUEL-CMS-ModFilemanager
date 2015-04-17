@@ -495,14 +495,14 @@ class RoxyImage {
 		self::OutputImage($thumbImg, RoxyFile::GetExtension(basename($source)), $destination, $quality);
 	}
 }
-$tmp = json_decode(file_get_contents(BASE_PATH . '/assets/conf.json'), true);
+$tmp = json_decode(file_get_contents(realpath(FILEMAN_PATH) . '/assets/conf.json'), true);
 if ($tmp) {
 	foreach ($tmp as $k => $v) {
 		defined($k) || define($k, $v);
 	}
 
 } else {
-	die('Error parsing configuration:');
+	die('Error parsing configuration:' . realpath(FILEMAN_PATH));
 }
 
 $FilesRoot = fixPath(getFilesPath());
