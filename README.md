@@ -42,4 +42,6 @@ This will replace default file input.
 
 - preview_width - image width for preview image generated at file select.
 - filetype - extension to filter files on list view
+ 
+
 =======
