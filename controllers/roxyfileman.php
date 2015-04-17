@@ -1,9 +1,10 @@
 <?php
-require_once FUEL_PATH . '/libraries/Fuel_base_controller.php';
+
+require_once FUEL_PATH . '/controllers/module.php';
 include dirname(__DIR__) . '/views/system.inc.php';
 include dirname(__DIR__) . '/views/php/functions.inc.php';
 
-class Roxyfileman extends Fuel_base_controller {
+class Roxyfileman extends Module {
 
 	public $nav_selected = 'fileman/roxyfileman';
 
