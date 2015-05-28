@@ -1,8 +1,8 @@
 <?php
 
 require_once FUEL_PATH . '/controllers/module.php';
-include dirname(__DIR__) . '/views/system.inc.php';
-include dirname(__DIR__) . '/views/php/functions.inc.php';
+include dirname(dirname(__FILE__)) . '/views/system.inc.php';
+include dirname(dirname(__FILE__)) . '/views/php/functions.inc.php';
 
 class Roxyfileman extends Module {
 

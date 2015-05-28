@@ -1,5 +1,5 @@
 /*
-  RoxyFileman - web based file manager. Ready to use with CKEditor, TinyMCE. 
+  RoxyFileman - web based file manager. Ready to use with CKEditor, TinyMCE.
   Can be easily integrated with any other WYSIWYG editor or CMS.
 
   Copyright (C) 2013, RoxyFileman.com - Lyubomir Arsov. All rights reserved.
@@ -22,7 +22,7 @@
 function FileSelected(file){
   /**
    * file is an object containing following properties:
-   * 
+   *
    * fullPath - path to the file - absolute from your site root
    * path - directory in which the file is located - absolute from your site root
    * size - size of the file in bytes
@@ -31,15 +31,15 @@ function FileSelected(file){
    * ext - file extension
    * width - if the file is image, this will be the width of the original image, 0 otherwise
    * height - if the file is image, this will be the height of the original image, 0 otherwise
-   * 
+   *
    */
   var s = (file.ext == 'png' || file.ext == 'gif' || file.ext == 'jpg' || file.ext == 'jpeg' || file.ext == 'svg');
-  file.fullPath = s ? file.fullPath : jqx_config.basePath + 'fuel/modules/fileman/assets/images/filetypes/big/file_extension_' + file.ext + '.png';
+  icon = s ? file.fullPath : jqx_config.basePath + 'fuel/modules/fileman/assets/images/filetypes/big/file_extension_' + file.ext + '.png';
   // Set the value of field sent to Fileman via URL param "field".
   window.parent.document.getElementById(RoxyUtils.GetUrlParam('field')).value = file.fullPath;
   // Set the source of an image which id is sent to Fileman via URL param "img".
-  window.parent.document.getElementById(RoxyUtils.GetUrlParam('img')).src = file.fullPath;
-  // Close file manager if it's opened in separate window. 
+  window.parent.document.getElementById(RoxyUtils.GetUrlParam('img')).src = icon;
+  // Close file manager if it's opened in separate window.
   self.close();
   // Close file manager if it's opened in JQuery dialog.
   window.parent.closeCustomRoxy(RoxyUtils.GetUrlParam('id'));
@@ -49,6 +49,6 @@ function GetSelectedValue(){
   * This function is called to retrieve selected value when custom integration is used.
   * Url parameter selected will override this value.
   */
-  
+
   return "";
 }
